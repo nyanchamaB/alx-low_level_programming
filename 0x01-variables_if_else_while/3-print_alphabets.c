@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * main - A program with uppercase and lowercase alphabet
- * Prints a new line
+ * Description: 'Prints a new line'
  * Returns: 0 (Success)
  */
 int main(void)
