@@ -7,7 +7,7 @@
  * Return: 0 (Success)
  */
 int main(void)
-{       
+{	
         int n = 0;
 	int m;
 
@@ -21,8 +21,9 @@ int main(void)
 				putchar(n + 48);
 				putchar(m + 48);
 
-				if(n + m != 12)
+				if(n + m != 17)
 				{
+					continue;
 					putchar(',');
 					putchar(' ');
 				}
