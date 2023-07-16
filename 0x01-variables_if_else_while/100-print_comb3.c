@@ -23,7 +23,6 @@ int main(void)
 
 				if(n + m != 17)
 				{
-					continue;
 					putchar(',');
 					putchar(' ');
 				}
