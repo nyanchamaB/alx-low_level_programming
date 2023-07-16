@@ -7,29 +7,28 @@
  * Return: 0 (Success)
  */
 int main(void)
-{	
-        int n = 0;
-	int m;
+{
+	int a = '0';
+	int b = '0';
 
-	while (n <= 9)
+	while (a <= '9')
 	{
-		m = 0;
-		while (m <= 9)
+		while (b <= '9')
 		{
-			if (n != m && n < m)
+			if (a < b)
 			{
-				putchar(n + 48);
-				putchar(m + 48);
-
-				if(n + m != 17)
+				putchar(a);
+				putchar(b);
+				if (a != '8' || (a == '8' && b != '9'))
 				{
 					putchar(',');
 					putchar(' ');
 				}
 			}
-			m++;
+			a++;
 		}
-		n++;
+		a++;
+		b = '0';
 	}
 	putchar('\n');
 	return (0);
