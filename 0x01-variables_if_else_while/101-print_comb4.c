@@ -7,31 +7,27 @@
  * Return: 0 (Success)
  */
 int main(void)
-{       
-        int a = 0;
-	int b, c;
+{
+int i, j, k;
 
-	while (a <= 9)
+for (i = 0; i < 8; i++)
+{
+	for (j = i + 1; j < 9; j++)
 	{
-		b = 0;
-		while (c <= 9)
+		for (k = j + 1; k < 10; k++)
 		{
-			if (a != b && a < b && b != c && b < c)
-			{
-				putchar(a + 48);
-				putchar(b + 48);
-				putchar(c + 48);
-				if (a + b + c != 24)
+		putchar((i) + '0');
+		putchar((j) + '0');
+		putchar((k) + '0');
+
+		if (!(i == 7 && j == 8 && k == 9))
 				{
-					putchar(',');
-					putchar(' ');
+				putchar(',');
+				putchar(' ');
 				}
-				a++;
-			}
-			b++;
 		}
-		c++;
 	}
-	putchar('\n');
-	return (0);
-}		                 
+}
+putchar('\n');
+return (0);
+}
