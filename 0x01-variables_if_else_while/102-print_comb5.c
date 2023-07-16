@@ -8,31 +8,25 @@
  */
 int main(void)
 {       
-        int a = 0;
+        int a;
 	int b;
 
-	while (a <= 99)
+	for (a = 0; a < 100; a++)
 	{
-		b = a;
-		while (b <= 99)
+		for (b = a + 1; b < 100; b++)
 		{
-			if (b != a)
-			{
-				putchar((a / 10) + 48);
-				putchar((a % 10) + 48);
-				putchar(' ');
-				putchar((b / 10) + 48);
-				putchar((b % 10) + 48);
+			putchar((a / 10) + '0');
+			putchar((a % 10) + '0');
+			putchar(' ');
+			putchar((b / 10) + '0');
+			putchar((b % 10) + '0');
 
-				if (a != 98 || b != 99);
-				{
-					putchar(',');
-					putchar(' ');
-				}
+			if (!(a == 98 && b == 99))
+			{
+				putchar(',');
+				putchar(' ');
 			}
-			b++;
 		}
-		a++;
 	}
 	putchar('\n');
 	return (0);
