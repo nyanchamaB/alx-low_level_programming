@@ -1,14 +1,14 @@
 #include "maih.h"
 
 /**
- * _isdigit - A function that checks a digit 0 through 9
- * @c: A number to be checked
+ * _isdigit - Checks if a character is a digit
+ * @x: A number to be checked
  * Return: 1 if a character returns a digit 0 if otherwise
  */
 
-int _isdigit(int c)
+int _isdigit(int x)
 {
-	if (c >= 48 && c <= 57)
+	if (x >= 48 && x <= 57)
 	{
 		return (1);
 	}
