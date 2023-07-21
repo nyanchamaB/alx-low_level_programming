@@ -1,7 +1,7 @@
 #include "maih.h"
 
 /**
- * _isdigit - Checks if a character is a digit
+ * _isdigit - Checks for a character digit
  * @x: A number to be checked
  * Return: 1 if a character returns a digit 0 if otherwise
  */
